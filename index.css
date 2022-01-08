@@ -129,3 +129,13 @@ button {
 li {
     list-style-type: none;
 }
+
+.nav-table {
+    table-layout: fixed ;
+    width: 100% ;
+}
+  
+.nav-td {
+    width: 25% ;
+    text-align: center;
+}
