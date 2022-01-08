@@ -82,11 +82,12 @@ a {
     width: 200px;
     background-color: white;
 
-    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
     padding: 20px;
     margin-bottom: 15px;
-    margin-left: 2px;
+    margin: 0 2px;
     border-radius: 12px;
+    display: inline-block;
 }
 
 button {
@@ -98,7 +99,9 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
     margin: 15px 0px;
+    cursor: pointer;
   }
+
