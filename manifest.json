@@ -1,0 +1,13 @@
+{
+	"name" : "Extention",
+	"version" : "1.0",
+	"description" : "Building study aid extension",
+	"permissions" : ["activeTab"],
+	"browser_action" : {
+		"default_popup" : "prac.html",
+		"default_icon" : {
+			"16" : "classii.png"
+		}
+	},
+	"manifest_version" : 2
+}
