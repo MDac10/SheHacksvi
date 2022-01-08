@@ -58,10 +58,6 @@ body {
     color: grey;
 }
 
-.nav-div-community {
-    align-items: center;
-}
-
 /*create a border for the navbar */
 .nav-bar {
     border: 1px solid black;
@@ -69,6 +65,16 @@ body {
     border-radius: 12px;
     padding: 10px;
     width: 500px;
+}
+
+.nav-table {
+    table-layout: fixed ;
+    width: 100% ;
+}
+  
+.nav-td {
+    width: 25% ;
+    text-align: center;
 }
 
 img {
@@ -141,15 +147,6 @@ li {
     list-style-type: none;
 }
 
-.nav-table {
-    table-layout: fixed ;
-    width: 100% ;
-}
-  
-.nav-td {
-    width: 25% ;
-    text-align: center;
-}
 /*todo: resize image to fit 500px width of extension*/
 .weekly-analytics-container img {
     width: 500px;
