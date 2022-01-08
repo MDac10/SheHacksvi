@@ -17,6 +17,10 @@ h1 {
     font-size: 30px;
 }
 
+h3 {
+    text-align: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -105,3 +109,23 @@ button {
     cursor: pointer;
   }
 
+.close-btn {
+    position:sticky;
+    left: 96.53%;
+    right: 2.43%;
+    top: 12.53%;
+    bottom: 85.85%;
+}
+
+.community-list img {
+    height: 100px;
+    width: 100px;
+}
+
+.community-list {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
