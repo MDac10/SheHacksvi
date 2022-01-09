@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 li, a {
@@ -15,6 +16,10 @@ li, a {
 
 h1 {
     font-size: 30px;
+}
+
+h2 {
+    font-size: 18px;
 }
 
 h3 {
@@ -63,7 +68,7 @@ body {
     border: 2px solid lightgrey;
     background-color: white;
     border-radius: 12px;
-    width: 500px;
+    width: 480px;
 }
 
 .nav-table {
@@ -90,7 +95,7 @@ a {
 
 .box {
     background-color: white;
-
+    font-size: 15px;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
     padding: 20px;
     margin-bottom: 15px;
@@ -110,10 +115,22 @@ a {
     display: inline-block;
 }
 
+.select-box {
+    background-color: #000000;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
+    padding: 20px;
+    margin-bottom: 15px;
+    margin: 10 2px;
+    border-radius: 12px;
+}
+
 button {
-    background-color: white;
+    background-color: black;
     border: none;
-    color: black;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -167,47 +184,111 @@ li {
     background-color: #E7FBBE;
 }
 
-td {
+.nav-bar td {
     border-right: solid lightgrey 2px;
 }
 
-td:first-child {
+.nav-bar td:first-child {
     border-radius: 12px 0 0 0;
 }
 
-td:last-child {
+.nav-bar td:last-child {
     border-radius: 0 12px 0 0;
     border-right: none;
 }
-    
-.circle {
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
-    padding: 20px;
-    margin: 10 10px;
-    border-radius: 100px;
-    cursor: pointer;
-}
 
-/*TODO: center letter in circle*/
-.circle a {
-    text-align: center;
-}
-
-.circle:active, .circle:hover {
-    background-color: aliceblue;
-}
-
-.schedule-weekdays-list {
-    display: flex;
-}
-
-.schedule {
+.calendar {
     margin: 20px 10px;
 }
 
 button:hover, button:active {
     background-color: aliceblue;
+}
+
+.month {
+    padding: 10px 25px;
+    width: 100%;
+    background: #EAC478;
+    text-align: center;
+  }  
+
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 2px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 2px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 11.8%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 11.8%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #E0AE47;
+    color: white !important
+  }
+
+  .last-month {
+    opacity: 0.3;
+  }
+
+  .event {
+      position: relative;
+      top: 5px;
+  }
+
+  .event-2 {
+    position: relative;
+    top: 9px;
+}
+
+.event-3 {
+    position: relative;
+    top: 14px;
+}
+
+.event-4 {
+    position: relative;
+    top: 12px;
 }
