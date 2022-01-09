@@ -379,6 +379,76 @@ form {
   height: 0;
 }
 
+button:hover, button:active, .link-btn:hover, .link-btn:active {
+    background-color: aliceblue;
+}
+
+input {
+    padding: 15px 10px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: grey;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
+}
+
+form {
+    display: none;
+}
+
+.update-progress-btn {
+    width: 100%;
+}
+
+
+.link-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    margin: 15px 0px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #F2709C, #FF9472);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	transition: 1s ease 0.3s;
+    opacity: 0;
+}
+
+.progress-container {
+    background-color: #f4f4f4;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 110px;
+	margin: 0;
+}
+
 /* The slider */
 .slider {
   position: absolute;
