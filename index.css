@@ -363,3 +363,28 @@ form {
 	height: 110px;
 	margin: 0;
 }
+
+.course1 {
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.course2 {
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+}
+
+.course2-image {
+    position: relative;
+    bottom: 25px;
+}
+
+.course2-title {
+    position: relative;
+    bottom: 25px;
+}
+
+#addCourseBtn {
+    width: 460px;
+}
