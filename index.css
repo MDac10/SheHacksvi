@@ -60,10 +60,9 @@ body {
 
 /*create a border for the navbar */
 .nav-bar {
-    border: 1px solid black;
-    background-color: aliceblue;
+    border: 2px solid lightgrey;
+    background-color: white;
     border-radius: 12px;
-    padding: 10px;
     width: 500px;
 }
 
@@ -71,7 +70,7 @@ body {
     table-layout: fixed ;
     width: 100% ;
 }
-  
+
 .nav-td {
     width: 25% ;
     text-align: center;
@@ -152,6 +151,35 @@ li {
     width: 500px;
 } 
 
+.community-color {
+    background-color: lightpink;
+}
+
+.analytics-color {
+    background-color: lightyellow;
+}
+
+.schedule-color {
+    background-color: #CDDEFF;
+}
+
+.settings-color {
+    background-color: #E7FBBE;
+}
+
+td {
+    border-right: solid lightgrey 2px;
+}
+
+td:first-child {
+    border-radius: 12px 0 0 0;
+}
+
+td:last-child {
+    border-radius: 0 12px 0 0;
+    border-right: none;
+}
+    
 .circle {
     background-color: white;
     width: 50px;
