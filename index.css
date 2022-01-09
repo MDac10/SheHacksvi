@@ -291,6 +291,8 @@ button:hover, button:active {
 .event-4 {
     position: relative;
     top: 12px;
+}
+
 button:hover, button:active, .link-btn:hover, .link-btn:active {
     background-color: aliceblue;
 }
