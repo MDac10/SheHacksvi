@@ -14,21 +14,17 @@
 
         <div class="container">
             <div class="courses">
-                <ul class="course-list">
-                    <li class="box">
-                        <img src="../images/course-progress.png" alt="course proress percentage">
-                        Intro to Web Design: Build Your own Website
-                    </li>
+                <ul id="course-list">
                     <li class="box">
                         <img src="../images/course-progress.png" alt="course proress percentage">
                         Intro to Web Design: Build Your own Website
                     </li>
                 </ul>
-                <button id="addCourseBtn">Add course</button>
-                <form class="add-course-form">
-                    <input class="course-link-field" type="text" name="course-link" placeholder="https://www.udemy.com/course/self-taught-programmer/learn">
-                    <button class="submit-new-course-btn">Submit</button>
-                </form>
+                <button class="addCourseBtn" onclick='testFunction()'>Add Course</button>
+                <div id="add-course-form">
+                    <input id="course-url-field" type="text" name="course-link" placeholder="https://www.udemy.com/course/self-taught-programmer/learn">
+                    <button id="submit-new-course-btn">Submit</button>
+                </div>
             </div>
         </div>
 
