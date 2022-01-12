@@ -14,24 +14,20 @@
 
         <div class="container">
             <div class="courses">
-                <table cellspacing="10">
-                    <tr>
-                        <td class="course1">
+                <table cellspacing="10" >
+                    <tr id="course-list">
+                        <td class="course1" id="course-item">
                             <img src="../images/course-progress.png" alt="course progress percentage" width="170" height="170">
                             <br>
                             Intro to Web Design: Build Your own Website
                         </td>
-                        <td class="course2">
-                            <img class="course2-image" src="../images/course-progress2.png" alt="course progress percentage" width="210" height="180">
-                            <span class="course2-title">Code Your First Game!</span>
-                        </td>
                     </tr>
                 </table>
-                <button id="addCourseBtn">+ Add Course</button>
-                <form class="add-course-form">
-                    <input class="course-link-field" type="text" name="course-link" placeholder="https://www.udemy.com/course/self-taught-programmer/learn">
-                    <button class="submit-new-course-btn">Submit</button>
-                </form>
+                <button id="addCourseBtn" onclick='testFunction()'>+ Add Course</button>
+                <div id="add-course-form">
+                    <input id="course-url-field" type="text" name="course-link" placeholder="https://www.udemy.com/course/self-taught-programmer/learn">
+                    <button id="submit-new-course-btn">Submit</button>
+                </div>
             </div>
         </div>
 
