@@ -334,6 +334,7 @@ form {
     border: 2px solid lightgrey;
     border-radius: 12px;
     padding: 20px;
+    margin: 10px 5px;
 }
 
 .course2 {
@@ -384,6 +385,11 @@ input {
 
 #add-course-form {
     display: none;
+}
+
+#course-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .update-progress-btn {

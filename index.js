@@ -40,11 +40,11 @@ function renderCourses() {
     courseList.innerHTML = "";
     for (let i = 0; i < courses.length; i++) {
         courseList.innerHTML += 
-            `<td class="course1">
+            `<div class="course1">
                 <img src="../images/course-progress.png" alt="course progress percentage" width="170" height="170">
                 <br>
                 ${courses[i].name}
-            </td>`
+            </div>`
     }
 }
 
