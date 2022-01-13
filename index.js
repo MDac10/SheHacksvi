@@ -1,4 +1,10 @@
 let courses = [];
+let testCourse = {          //TODO: remove
+    name: "Test Course",
+    url: "link_url",
+    progress: 50,
+}
+let currentCourse = testCourse; //TODO: change to null; this is just a placeholder
 
 //Courses page 
 const addCourseBtn = document.getElementById("addCourseBtn");
@@ -19,9 +25,14 @@ submitCourseBtn.addEventListener("click", function() {
         progress: 0,
     }
     courses.push(course);
+    setCurrentCourse(course);
     renderCourses();
     urlField.value = "";
 })
+
+function setCurrentCourse(course) {
+    currentCourse = course;
+}
 
 //TODO: Courses don't wrap around page when more than 2 are added
 function renderCourses() {
@@ -38,7 +49,11 @@ function renderCourses() {
 }
 
 //Progress Page
-const progress = document.querySelector('.progress-done');
 
-progress.style.width = progress.getAttribute('data-done') + '%';
-progress.style.opacity = 1;
+//next steps: get progress percentage text to render & progress bar to update dynamically (on page load)
+const progressPercentage = document.getElementById("progress-percentage");
+progressPercentage.innerHTML = currentCourse.progress + "%";
+
+const progressBar = document.getElementById("progress-bar");
+const progressContainer = document.getElementById("progress-container");
+progressBar.style.width = progressPercentage / 100 * progressContainer.width
