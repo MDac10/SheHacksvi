@@ -12,6 +12,6 @@ We sent out a survey with 22 respondents to dig deeper into the reason why stude
 With these causes in mind, we built Classii.
 
 ### The Solution
-Classii is a web extension designed to reduce reported feelings of isolation, increase motivation, and make courses easier to keep up with.
+Classii helps reduce reported feelings of isolation, increases motivation, and make courses easier to keep up with.
 Check out the prototype here:
 https://www.youtube.com/watch?v=e5SJpyf3XrU
