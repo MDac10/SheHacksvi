@@ -335,6 +335,7 @@ form {
     border-radius: 12px;
     padding: 20px;
     margin: 10px 5px;
+    max-width: 300px;
 }
 
 .course2 {
@@ -498,4 +499,30 @@ input:checked + .slider:before {
     padding: 0;
     vertical-align: middle;
     color: white;
+}
+.circle {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
+    padding: 20px;
+    margin: 10 10px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.circle:active, .circle:hover {
+    background-color: aliceblue;
+}
+
+.schedule-weekdays-list {
+    display: flex;
+}
+
+.schedule {
+    margin: 20px 10px;
+}
+
+.light-text {
+    color: grey;
 }

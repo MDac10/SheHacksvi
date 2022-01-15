@@ -57,3 +57,4 @@ progressPercentage.innerHTML = currentCourse.progress + "%";
 const progressBar = document.getElementById("progress-bar");
 const progressContainer = document.getElementById("progress-container");
 progressBar.style.width = progressPercentage / 100 * progressContainer.width
+
