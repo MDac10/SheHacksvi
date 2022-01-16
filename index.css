@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow: scroll;
 }
 
 li, a {
@@ -15,7 +16,7 @@ li, a {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 150%;
 }
 
 h2 {
@@ -37,7 +38,8 @@ body {
     margin: 0;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-    width: 500px;
+    width: 28vw;
+    height: 70vh;
 }
 
 .logo {
@@ -150,6 +152,11 @@ button {
     bottom: 85.85%;
 }
 
+.community-img {
+    width: 100%;
+    height: 100%;
+}
+
 .community-list img {
     height: 100px;
     width: 100px;
@@ -182,6 +189,19 @@ li {
 
 .settings-color {
     background-color: #E7FBBE;
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-label {
+    font-size: 80%;
+}
+
+.nav-icon {
+    width: 45%;
+    height: 45%;
 }
 
 .nav-bar td {
