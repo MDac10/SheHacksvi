@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="../index.css">
         <title>Classii 👋</title>
+        <script src="../index.js"></script>
     </head>
     <body>
         <header>
@@ -16,52 +17,52 @@
 
         <div class="schedule">
             <ul class="schedule-weekdays-list">
-                <li class="circle sunday">
+                <li class="circle sunday" onclick=openSunday()>
                     <a>S</a>
                 </li>
-                <li class="circle monday">
+                <li id="monday" class="circle" onclick=openMonday()>
                     <a>M</a>
                 </li>
-                <li class="circle tuesday">
+                <li class="circle tuesday" onclick=openTuesday()>
                     <a>T</a>
                 </li>
-                <li class="circle wednesday">
+                <li class="circle wednesday" onclick=openWednesday()>
                     <a>W</a>
                 </li>
-                <li class="circle thursday">
+                <li class="circle thursday" onclick=openThursday()>
                     <a>T</a>
                 </li>
-                <li class="circle friday">
+                <li class="circle friday" onclick=openFriday()>
                     <a>F</a>
                 </li>
-                <li class="circle saturday">
+                <li class="circle saturday" onclick=openSaturday()>
                     <a>S</a>
                 </li>
             </ul>
             <ul class="daily-schedule-inputs">
-                <li class="sunday-input hidden">
-                    Sunday <input type="text" name="sunday-field-one" placeholder="8:30"> to <input type="text" name="sunday-field-two" placeholder="10:30"> 
+                <li id="sunday-input" class="day-input hidden">
+                    Sunday <input class="input-time" type="text" name="sunday-field-one" placeholder="8:30"> to <input class="input-time" type="text" name="sunday-field-two" placeholder="10:30"> 
                 </li>
-                <li class="monday-input">
-                    Monday <input type="text" name="monday-field-one" placeholder="8:30"> to <input type="text" name="monday-field-two" placeholder="10:30"> 
+                <li id="monday-input" class="day-input hidden">
+                    Monday <input class="input-time" type="text" name="monday-field-one" placeholder="8:30"> to <input class="input-time" type="text" name="monday-field-two" placeholder="10:30"> 
                 </li>
-                <li>
-                    Tuesday <input type="text" name="tuesday-field-one" placeholder="19:00"> to <input type="text" name="tuesday-field-two" placeholder="21:00"> 
+                <li id="tuesday-input" class="day-input hidden">
+                    Tuesday <input class="input-time" type="text" name="tuesday-field-one" placeholder="19:00"> to <input class="input-time" type="text" name="tuesday-field-two" placeholder="21:00"> 
                 </li>
-                <li>
-                    Wednesday <input type="text" name="wednesday-field-one" placeholder="19:00"> to <input type="text" name="wednesday-field-two" placeholder="21:00"> 
+                <li id="wednesday-input" class="day-input hidden">
+                    Wednesday <input class="input-time" type="text" name="wednesday-field-one" placeholder="19:00"> to <input class="input-time" type="text" name="wednesday-field-two" placeholder="21:00"> 
                 </li>
-                <li>
-                    Thursday <input type="text" name="thursday-field-one" placeholder="8:30"> to <input type="text" name="thursday-field-two" placeholder="10:30"> 
+                <li id="thursday-input" class="day-input hidden">
+                    Thursday <input class="input-time" type="text" name="thursday-field-one" placeholder="8:30"> to <input class="input-time" type="text" name="thursday-field-two" placeholder="10:30"> 
                 </li>
-                <li>
-                    Friday <input type="text" name="friday-field-one" placeholder="8:30"> to <input type="text" name="friday-field-two" placeholder="10:30"> 
+                <li id="friday-input" class="day-input hidden">
+                    Friday <input class="input-time" type="text" name="friday-field-one" placeholder="8:30"> to <input class="input-time" type="text" name="friday-field-two" placeholder="10:30"> 
                 </li>
-                <li>
-                    Saturday <input type="text" name="saturday-field-one" placeholder="8:30"> to <input type="text" name="saturday-field-two" placeholder="10:30"> 
+                <li id="saturday-input" class="day-input hidden">
+                    Saturday <input class="input-time" type="text" name="saturday-field-one" placeholder="8:30"> to <input class="input-time" type="text" name="saturday-field-two" placeholder="10:30"> 
                 </li>
             </ul>
-            <button>Submit</button>
+            <button id="submit-schedule-btn" onclick=submitSchedule()>Submit</button>
         </div>
 
         <footer>
@@ -112,6 +113,5 @@
                 </div>
             </nav>
         </footer>
-        <script src="index.js"></script>
     </body>
 </html>
