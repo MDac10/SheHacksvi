@@ -526,3 +526,7 @@ input:checked + .slider:before {
 .light-text {
     color: grey;
 }
+
+.hidden {
+    display: none;
+}

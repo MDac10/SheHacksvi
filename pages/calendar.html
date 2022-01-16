@@ -16,34 +16,49 @@
 
         <div class="schedule">
             <ul class="schedule-weekdays-list">
-                <li class="circle">
+                <li class="circle sunday">
                     <a>S</a>
                 </li>
-                <li class="circle">
+                <li class="circle monday">
                     <a>M</a>
                 </li>
-                <li class="circle">
+                <li class="circle tuesday">
                     <a>T</a>
                 </li>
-                <li class="circle">
+                <li class="circle wednesday">
                     <a>W</a>
                 </li>
-                <li class="circle">
+                <li class="circle thursday">
                     <a>T</a>
                 </li>
-                <li class="circle">
+                <li class="circle friday">
                     <a>F</a>
                 </li>
-                <li class="circle">
+                <li class="circle saturday">
                     <a>S</a>
                 </li>
             </ul>
             <ul class="daily-schedule-inputs">
-                <li>
-                    Monday <input type="text" name="Monday-field-one" placeholder="8:30"> to <input type="text" name="Monday-field-two" placeholder="10:30"> 
+                <li class="sunday-input hidden">
+                    Sunday <input type="text" name="sunday-field-one" placeholder="8:30"> to <input type="text" name="sunday-field-two" placeholder="10:30"> 
+                </li>
+                <li class="monday-input">
+                    Monday <input type="text" name="monday-field-one" placeholder="8:30"> to <input type="text" name="monday-field-two" placeholder="10:30"> 
                 </li>
                 <li>
-                    Tuesday <input type="text" name="Monday-field-one" placeholder="19:00"> to <input type="text" name="Monday-field-two" placeholder="21:00"> 
+                    Tuesday <input type="text" name="tuesday-field-one" placeholder="19:00"> to <input type="text" name="tuesday-field-two" placeholder="21:00"> 
+                </li>
+                <li>
+                    Wednesday <input type="text" name="wednesday-field-one" placeholder="19:00"> to <input type="text" name="wednesday-field-two" placeholder="21:00"> 
+                </li>
+                <li>
+                    Thursday <input type="text" name="thursday-field-one" placeholder="8:30"> to <input type="text" name="thursday-field-two" placeholder="10:30"> 
+                </li>
+                <li>
+                    Friday <input type="text" name="friday-field-one" placeholder="8:30"> to <input type="text" name="friday-field-two" placeholder="10:30"> 
+                </li>
+                <li>
+                    Saturday <input type="text" name="saturday-field-one" placeholder="8:30"> to <input type="text" name="saturday-field-two" placeholder="10:30"> 
                 </li>
             </ul>
             <button>Submit</button>
@@ -54,34 +69,42 @@
                 <div class="nav-bar">
                     <table class="nav-table" cellspacing="0">
                         <tr>
-                            <td class="nav-td community-color" height="10"><img src="../images/transp.gif" alt="pink placeholder"></td>
-                            <td class="nav-td analytics-color" height="10"><img src="../images/transp.gif" alt="yellow placeholder"></td>
-                            <td class="nav-td schedule-color" height="10"><img src="../images/transp.gif" alt="blue placeholder"></td>
-                            <td class="nav-td settings-color" height="10"><img src="../images/transp.gif" alt="green placeholder"></td>
+                            <td class="nav-td community-color" height="10">&nbsp</td>
+                            <td class="nav-td analytics-color" height="10"></td>
+                            <td class="nav-td schedule-color" height="10"></td>
+                            <td class="nav-td settings-color" height="10"></td>
                         </tr>
                         <tr>
                           <td class="nav-td">
                             <div>
-                                <li><img src="../images/community.png" alt="community menu bar icon" width="40" height="30"></li>
-                                <li><a href="community.html">Community</a></li>
+                                <a href="community.html">
+                                    <li><img src="../images/community.png" alt="community menu bar icon" width="40" height="30"></li>
+                                    <li>Community</li>
+                                </a>
                             </div>
                         </td>
                           <td class="nav-td">
                             <div>
-                                <li><img src="../images/progress.png" alt="progress menu bar icon" width="40" height="30"></li>
-                                <li><a href="progress.html">Progress</a></li>
+                                <a href="progress.html">
+                                    <li><img src="../images/progress.png" alt="progress menu bar icon" width="40" height="30"></li>
+                                    <li>Progress</li>
+                                </a>
                             </div>
                           </td>
                           <td class="nav-td">
                             <div>
-                                <li><img src="../images/calendar.png" alt="calendar menu bar icon" width="40" height="30"></li>
-                                <li><a href="calendar.html">Schedule</a></li>
+                                <a href="calendar.html">
+                                    <li><img src="../images/calendar.png" alt="calendar menu bar icon" width="40" height="30"></li>
+                                    <li>Schedule</li>
+                                </a>
                             </div>
                           </td>
                           <td class="nav-td">
                             <div>
-                                <li><img src="../images/settings.png" alt="settings menu bar icon" width="40" height="30"></li>
-                                <li><a href="settings.html">Settings</a></li>
+                                <a href="settings.html">
+                                    <li><img src="../images/settings.png" alt="settings menu bar icon" width="40" height="30"></li>
+                                    <li>Settings</li>
+                                </a>
                             </div>
                           </td>
                         </tr>

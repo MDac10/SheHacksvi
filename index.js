@@ -58,3 +58,11 @@ const progressBar = document.getElementById("progress-bar");
 const progressContainer = document.getElementById("progress-container");
 progressBar.style.width = progressPercentage / 100 * progressContainer.width
 
+
+//Schedule Page
+const weekdayBtn = document.getElementByClassName("circle");
+weekdayBtn.addEventListener("click", function() {
+    if (weekdayBtn.classList.contains("sunday")) {
+        document.getElementByID("sunday-input").classList.toggle("hidden");
+    }
+})
