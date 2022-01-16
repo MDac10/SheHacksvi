@@ -1,3 +1,6 @@
+// $(function() {
+//     $(".link-btn").hide(300)
+
 let courses = [];
 let testCourse = {          //TODO: remove
     name: "Test Course",
@@ -10,8 +13,8 @@ let currentCourse = testCourse; //TODO: change to null; this is just a placehold
 const addCourseBtn = document.getElementById("addCourseBtn");
 function testFunction() {
     document.getElementById("add-course-form").style.display = "block";
-	//TODO: (4) getCourseNameAndTeacher() function (to code later) that takes a course URL
-	//  and sets courseName and courseTeacher variables to their respective values 
+    //TODO: (4) getCourseNameAndTeacher() function (to code later) that takes a course URL
+    //  and sets courseName and courseTeacher variables to their respective values 
 }
 
 const submitCourseBtn = document.getElementById("submit-new-course-btn");
@@ -59,10 +62,47 @@ const progressContainer = document.getElementById("progress-container");
 progressBar.style.width = progressPercentage / 100 * progressContainer.width
 
 
+
 //Schedule Page
-const weekdayBtn = document.getElementByClassName("circle");
-weekdayBtn.addEventListener("click", function() {
-    if (weekdayBtn.classList.contains("sunday")) {
-        document.getElementByID("sunday-input").classList.toggle("hidden");
+
+function submitSchedule() {
+    console.log("I'm clicked!")
+}
+
+function openSunday() {
+    toggleCorrectWeekday("sunday-input");
+}
+
+function openMonday() {
+    toggleCorrectWeekday("monday-input");
+}
+
+function openTuesday() {
+    toggleCorrectWeekday("tuesday-input");
+}
+
+function openWednesday() {
+    toggleCorrectWeekday("wednesday-input");
+}
+
+function openThursday() {
+    toggleCorrectWeekday("thursday-input");
+}
+
+function openFriday() {
+    toggleCorrectWeekday("friday-input");
+}
+
+function openSaturday() {
+    toggleCorrectWeekday("saturday-input");
+}
+
+function toggleCorrectWeekday(className) {
+    const inputElement = document.getElementById(className);
+    if (inputElement.style.display === "none") {
+        inputElement.style.display = "block";
+    } else {
+        inputElement.style.display = "none";
     }
-})
+}
+
