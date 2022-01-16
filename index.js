@@ -62,6 +62,7 @@ $(function() {
     const progressContainer = document.getElementById("progress-container");
     progressBar.style.width = progressPercentage / 100 * progressContainer.width
 
+<<<<<<< Updated upstream
         
         
 
@@ -69,3 +70,18 @@ $(function() {
 
 
 });
+=======
+//Schedule Page
+const monday = document.getElementById("monday");
+monday.addEventListener("click", function() {
+    console.log("clicked monday")
+})
+
+// weekdays.addEventListener("click", function() {
+//     console.log(weekdays)
+//     if (weekdayBtn.classList.contains("sunday")) {
+//         document.getElementByID("sunday-input").classList.toggle("hidden");
+//     }
+
+
+>>>>>>> Stashed changes
