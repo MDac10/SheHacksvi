@@ -356,7 +356,8 @@ form {
     border-radius: 12px;
     padding: 20px;
     margin: 10px 5px;
-    max-width: 300px;
+    min-width: 175px;
+    max-width: 176px;
     word-wrap: break-word;
 }
 
@@ -545,4 +546,31 @@ input:checked + .slider:before {
 
 .hidden {
     display: none;
+}
+
+#addCourseBtn {
+    width: 375px;
+}
+
+.progress-container-courses {
+    height: 20px;
+    width: 100%;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+}
+
+#progress-bar-courses {
+    height: 20px;
+    /*width: 39%;*/
+    background-color: #fdd0a9;
+    border-radius: 20px;
+    background: linear-gradient(to left, #F2709C, #FF9472);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+}
+
+#progress-bar-courses a {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    color: white;
 }
