@@ -40,6 +40,7 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 28vw;
     height: 70vh;
+    min-width: 400px;   
 }
 
 .logo {
@@ -482,23 +483,23 @@ input:checked + .slider:before {
     text-align: left;
 }
 
-.progress-container {
+#progress-container {
     height: 30px;
     width: 100%;
     background-color: #e5e5e5;
     border-radius: 20px;
 }
 
-.progress-bar {
+#progress-bar {
     height: 30px;
-    width: 70%;
+    /*width: 39%;*/
     background-color: #fdd0a9;
     border-radius: 20px;
     background: linear-gradient(to left, #F2709C, #FF9472);
 	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
 }
 
-.progress-bar a {
+#progress-bar a {
     margin: 0;
     padding: 0;
     vertical-align: middle;

@@ -1,11 +1,18 @@
-// $(function() {
-//     $(".link-btn").hide(300)
+window.onload = (event) => {
+    //Progress Page: progress bar
+    const progressPercentage = document.getElementById("progress-percentage");
+    progressPercentage.innerHTML = currentCourse.progress + "%";
+
+    const progressBar = document.getElementById("progress-bar");
+    progressBar.style.width = testCourse.progress + '%';
+  };
+
 
 let courses = [];
-let testCourse = {          //TODO: remove
+let testCourse = {         
     name: "Test Course",
     url: "link_url",
-    progress: 50,
+    progress: 30,
 }
 let currentCourse = testCourse; //TODO: change to null; this is just a placeholder
 
@@ -44,9 +51,9 @@ function renderCourses() {
     for (let i = 0; i < courses.length; i++) {
         courseList.innerHTML += 
             `<div class="course1">
-                <img src="../images/course-progress.png" alt="course progress percentage" width="170" height="170">
-                <br>
                 ${courses[i].name}
+                <br>
+                <img src="../images/course-progress.png" alt="course progress percentage" width="170" height="170">
             </div>`
     }
 }
@@ -54,12 +61,7 @@ function renderCourses() {
 //Progress Page
 
 //next steps: get progress percentage text to render & progress bar to update dynamically (on page load)
-const progressPercentage = document.getElementById("progress-percentage");
-progressPercentage.innerHTML = currentCourse.progress + "%";
 
-const progressBar = document.getElementById("progress-bar");
-const progressContainer = document.getElementById("progress-container");
-progressBar.style.width = progressPercentage / 100 * progressContainer.width
 
 
 
